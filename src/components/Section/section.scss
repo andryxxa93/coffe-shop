@@ -1,0 +1,50 @@
+.section {
+    padding: 80px 10px 40px 10px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    &_white {
+        color: white;
+    }
+    &_black {
+        color: black;
+    }
+    &_small {
+        min-height: 260px;
+    }
+    &_big {
+        min-height: 640px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        span {
+            margin-top: 30px;
+            text-align: center;
+            display: block;
+            &:last-child {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .section {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}

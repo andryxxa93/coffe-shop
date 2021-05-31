@@ -1,0 +1,35 @@
+.card {
+    margin: 0 auto; 
+    padding: 22px 18px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 2s ease;
+    color: black;
+    img {
+        max-width: 170px;
+        max-height: 115px;
+        margin-bottom: 14px;
+    }
+    &_transparent {
+        background-color: rgba($color: #ffff, $alpha: .65);
+    }
+    &_white {
+        background-color: white;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+    }
+    &__price {
+        margin-top: 10px;
+        align-self: flex-end;
+        font-weight: 700;
+    }
+    &__country {
+        margin-top: 14px;
+        align-self: flex-end;
+    }
+}
